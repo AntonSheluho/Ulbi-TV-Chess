@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import BoardComponent from './components/BoardComponent';
 import { Board } from './models/Board';

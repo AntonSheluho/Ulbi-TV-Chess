@@ -1,15 +1,16 @@
-import { FC } from "react"
-import { Cell } from "../models/Cell"
+import { FC } from 'react';
+import { Cell } from '../models/Cell';
 
 interface CellProps {
-  cell: Cell
+    cell: Cell;
 }
 
-const CellComponent: FC<CellProps> = ({cell}) => {
+const CellComponent: FC<CellProps> = ({ cell }) => {
+    return (
+        <div className={['cell', cell.color].join(' ')}>
+            {cell.figure?.logo && <img src={cell.figure.logo} alt="" />}
+        </div>
+    );
+};
 
-  return (
-    <div className={['cell', cell.color].join(' ')}></div>
-  )
-}
-
-export default CellComponent
+export default CellComponent;

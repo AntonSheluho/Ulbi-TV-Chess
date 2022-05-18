@@ -65,6 +65,8 @@ export class Board {
         new Bishop(Colors.WHITE, this.getCell(5, 7))
     }
 
+    // public addFisherFigures() {}
+
     public addFigures() {
         this.addPawns()
         this.addQueens()

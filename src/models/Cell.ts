@@ -11,7 +11,7 @@ export class Cell {
     available: boolean; // Can you move sw
     id: number; // For react keys
 
-    constructor(board: Board, x: number, y: number, color: Colors,figure: Figure | null) {
+    constructor(board: Board, x: number, y: number, color: Colors, figure: Figure | null) {
         this.x = x;
         this.y = y;
         this.color = color;
@@ -19,5 +19,13 @@ export class Cell {
         this.board = board;
         this.available = false;
         this.id = Math.random();
+    }
+
+    moveFigure(target: Cell) {
+        if (this.figure && this.figure?.canMove(target)) {
+            this.figure.moveFigure(target)
+            target.figure = this.figure;
+            this.figure = null;
+        }
     }
 }

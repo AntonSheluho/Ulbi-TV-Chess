@@ -12,6 +12,10 @@ export class Bishop extends Figure {
     }
 
     canMove(target: Cell): boolean {
-        return super.canMove(target)
+        if(!super.canMove(target)) {
+            return false
+        }
+        return true
+        // return super.canMove(target)
     }
 }

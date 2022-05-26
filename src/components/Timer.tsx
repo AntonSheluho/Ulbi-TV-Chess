@@ -16,7 +16,17 @@ const Timer: FC<TimerProps> = ({ currentPlayer, restart }) => {
 
     useEffect(() => {
         startTimer()
-    }, [])
+        if (blackTime === 0) {
+            handleRestart()
+            alert('White wins')
+        }
+        if (whiteTime === 0) {
+            handleRestart()
+            alert('Black wins')
+        }
+    }, [currentPlayer, blackTime, whiteTime])
+
+    
 
     function startTimer() {
         if (timer.current) {

@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/CV-React/static/css/main.2c08b986.css",
-    "main.js": "/CV-React/static/js/main.ef13f021.js",
-    "static/js/787.71afeba7.chunk.js": "/CV-React/static/js/787.71afeba7.chunk.js",
-    "index.html": "/CV-React/index.html",
-    "main.2c08b986.css.map": "/CV-React/static/css/main.2c08b986.css.map",
-    "main.ef13f021.js.map": "/CV-React/static/js/main.ef13f021.js.map",
-    "787.71afeba7.chunk.js.map": "/CV-React/static/js/787.71afeba7.chunk.js.map"
+    "main.css": "/Ulbi-TV-Chess/static/css/main.2c08b986.css",
+    "main.js": "/Ulbi-TV-Chess/static/js/main.ccc22cf8.js",
+    "static/js/787.71afeba7.chunk.js": "/Ulbi-TV-Chess/static/js/787.71afeba7.chunk.js",
+    "index.html": "/Ulbi-TV-Chess/index.html",
+    "main.2c08b986.css.map": "/Ulbi-TV-Chess/static/css/main.2c08b986.css.map",
+    "main.ccc22cf8.js.map": "/Ulbi-TV-Chess/static/js/main.ccc22cf8.js.map",
+    "787.71afeba7.chunk.js.map": "/Ulbi-TV-Chess/static/js/787.71afeba7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2c08b986.css",
-    "static/js/main.ef13f021.js"
+    "static/js/main.ccc22cf8.js"
   ]
 }

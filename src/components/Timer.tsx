@@ -13,6 +13,15 @@ const Timer: FC<TimerProps> = ({ currentPlayer, restart }) => {
     const [whiteTime, setWhiteTime] = useState(300);
 
     const timer = useRef<null | ReturnType<typeof setInterval>>(null)
+    
+    function startTimer() {
+        if (timer.current) {
+            clearInterval(timer.current)
+        }
+
+        const callback = currentPlayer?.color === Colors.WHITE ? decrementWhiteTimer : decrementBlackTimer
+        timer.current = setInterval(callback, 1000)
+    }
 
     useEffect(() => {
         startTimer()
@@ -28,14 +37,6 @@ const Timer: FC<TimerProps> = ({ currentPlayer, restart }) => {
 
     
 
-    function startTimer() {
-        if (timer.current) {
-            clearInterval(timer.current)
-        }
-
-        const callback = currentPlayer?.color === Colors.WHITE ? decrementWhiteTimer : decrementBlackTimer
-        timer.current = setInterval(callback, 1000)
-    }
 
     function decrementBlackTimer() {setBlackTime(prev => prev - 1)}
     function decrementWhiteTimer() {setWhiteTime(prev => prev - 1)}
